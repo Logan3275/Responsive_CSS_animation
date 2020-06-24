@@ -249,7 +249,7 @@ a:hover {
           flex: 1;
   max-width: 300px;
   height: 140px;
-  background-color: #444;
+  background-color: #8f662d7a;
   margin: 20px;
   cursor: pointer;
   display: -webkit-box;
@@ -265,7 +265,7 @@ a:hover {
 
 .icon {
   font-size: 32px;
-  color: #ea8685;
+  color: #1d6821;
   -webkit-transition: .3s linear;
   transition: .3s linear;
 }
@@ -289,12 +289,12 @@ a:hover {
 .card-content h3 {
   top: 20px;
   text-transform: uppercase;
-  color: #ea8685;
+  color: #285026;
 }
 
 .card-content span {
   bottom: 20px;
-  color: #fff;
+  color: #f1f1f1;
   font-weight: 500;
 }
 
