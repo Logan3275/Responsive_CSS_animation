@@ -1,0 +1,433 @@
+@import './variables';
+
+.index__body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background-color: $maincolor;
+}
+
+a {
+  color: #000;
+}
+
+
+/* header */
+
+.header {
+  background-color: $maincolor;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: $maincolor;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid $hovercolor;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: $hovercolor;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: $backgroundcolor;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: $backgroundcolor;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+.test {
+  background-color: $maincolor;
+  height: 58px;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: $margintext;
+  margin-right: $margintext;
+  font-size: 2em;
+}
+
+.index__one {
+  margin-top: 100px;
+  margin-left: $margintext;
+}
+
+.presentation {
+  float: center;
+  margin-right: $margintext;
+  margin-left: 50%;
+}
+
+.date {
+  float: center;
+  margin-right: 20%;
+  margin-left: 50%;
+  margin-bottom: 50px;
+}
+
+.index {
+  margin-left: 30%;
+  margin-top: 100px;
+}
+
+a:hover {
+  color: #bbb;
+}
+
+.indexbody {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  font-family: sans-serif;
+}
+
+.hero-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background : url(/dist/Forest.jpg) no-repeat center;
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    text-align: center;
+    margin-left: $maginmedia;
+    margin-right: $maginmedia;
+  }
+
+  .index__one {
+    text-align: center;
+    margin-left: $maginmedia;
+    margin-right: $maginmedia;
+    margin-bottom: 50px;
+  }
+
+  .index {
+    text-align: center;
+    margin-left: $maginmedia;
+    margin-right: $maginmedia;
+    margin-bottom: 50px;
+  }
+
+  .date {
+    text-align: center;
+    margin-left: $maginmedia;
+    margin-right: $maginmedia;
+  }
+}
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* Contact scss */
+
+.contact-title {
+  margin-top: 100px;
+  color: $fontcolor;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+
+#why {
+  background-color: $background;
+}
+.contact {
+  font-size: 32px;
+  line-height: 10px;
+  color: $fontcolor;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+Form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+  text-align: center;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: $fontcolor;
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+input {
+  height: 45px;
+  text-align: center;
+  
+}
+
+form .submit {
+  background-color: #E64A19;
+  border-color: transparent;
+  color: $maincolor;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .submit:hover {
+  background-color: #BF360C;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile) {
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* About Me scss */
+
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side {
+  position: relative;
+  width: 300px;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-side {
+  position: relative;
+  width: 300px;
+  margin-top: 75px;
+  margin-left: 35px;
+}
+
+.right-side .about {
+  position: relative;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.right-side .name {
+  width: 400px;
+  height: 50px;
+  background: $maincolor;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.685);
+  margin-top: 20px;
+  margin-left: -100px;
+  margin-bottom: 30px;
+}
+
+.right-side .about__one {
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.507);
+  text-transform: uppercase;
+}
+
+.right-side span {
+  display: block;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 3px;
+  background: #db0e0e80;
+}
+
+.pabout {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.555)
+}
+
+@media (max-width: $mobile) {
+  .container {
+    display: none;
+  }
+}
+
+.weird {
+  height: 58px;
+}
+
+.responsive {
+  background: $background;
+  height: 125vh;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.phone {
+  margin-left: $maginmedia;
+  margin-right: $maginmedia;
+  text-align: left;
+}
+
+.phone_last {
+  margin-left: $maginmedia;
+  margin-right: $maginmedia;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.about_phone {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.name_phone {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  background: $maincolor;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.685);
+  color: rgba(0, 0, 0, 0.507);
+}
+
+span {
+  display: block;
+  margin-bottom: 40px;
+  width: 80px;
+  height: 3px;
+  background: #db0e0e80;
+  margin-left: 10%;
+}
+
+.me_phone {
+    width: 40%;
+    height: 20%;
+}
+
+@media (min-width: $mobile) {
+  .responsive {
+    display: none;
+  }
+
+  .weird {
+    display: none;
+  }
+}
