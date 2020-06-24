@@ -221,70 +221,103 @@ a:hover {
 }
 
 /* Contact scss */
-.contact-title {
-  margin-top: 100px;
-  color: black;
-  text-transform: uppercase;
-  -webkit-transition: all 4s ease-in-out;
-  transition: all 4s ease-in-out;
+#try {
+  height: 100vh;
+  background: url(/dist/Forest.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#why {
-  background-color: #eee;
+.contact-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.contact {
-  font-size: 32px;
-  line-height: 10px;
-  color: black;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-Form {
-  margin-top: 50px;
-  -webkit-transition: all 4s ease-in-out;
-  transition: all 4s ease-in-out;
-  text-align: center;
-}
-
-.form-control {
-  width: 600px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid gray;
-  color: black;
-  font-size: 18px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-input {
-  height: 45px;
-  text-align: center;
-}
-
-form .submit {
-  background-color: #E64A19;
-  border-color: transparent;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-form .submit:hover {
-  background-color: #BF360C;
+.card {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 300px;
+  height: 140px;
+  background-color: #444;
+  margin: 20px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media (max-width: 640px) {
-  .form-control {
-    width: 100%;
+.icon {
+  font-size: 32px;
+  color: #ea8685;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.card:hover .icon {
+  -webkit-transform: scale(4);
+          transform: scale(4);
+  opacity: 0;
+}
+
+.card-content h3,
+.card-content span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 16px;
+  opacity: 0;
+}
+
+.card-content h3 {
+  top: 20px;
+  text-transform: uppercase;
+  color: #ea8685;
+}
+
+.card-content span {
+  bottom: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.card:hover h3 {
+  opacity: 1;
+  bottom: 46px;
+  -webkit-transition: .3s linear .3s;
+  transition: .3s linear .3s;
+}
+
+.card:hover span {
+  opacity: 1;
+  bottom: 46px;
+  -webkit-transition: .3s linear .3s;
+  transition: .3s linear .3s;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 500px;
   }
 }
 
@@ -415,7 +448,7 @@ form .submit:hover {
   color: rgba(0, 0, 0, 0.507);
 }
 
-span {
+.spanabout {
   display: block;
   margin-bottom: 40px;
   width: 80px;
