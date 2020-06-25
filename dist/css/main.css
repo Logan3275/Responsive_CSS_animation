@@ -174,7 +174,7 @@ a:hover {
   position: relative;
   height: 500px;
   overflow: hidden;
-  background: url(/dist/Forest.jpg) no-repeat center;
+  background: url("https://raw.githubusercontent.com/Logmastercoder/CODE/master/dist/Forest.jpg") no-repeat center;
 }
 
 @media (max-width: 768px) {
@@ -223,7 +223,7 @@ a:hover {
 /* Contact scss */
 #try {
   height: 100vh;
-  background: url(/dist/Forest.jpg) no-repeat center;
+  background: url("https://raw.githubusercontent.com/Logmastercoder/CODE/master/dist/Forest.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
