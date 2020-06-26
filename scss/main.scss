@@ -19,17 +19,16 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: $maincolor;
+  }
 }
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: $maincolor;
-}
-
-.header li a {
+li a {
   display: block;
   padding: 20px 20px;
   border-right: 1px solid $hovercolor;
@@ -41,7 +40,7 @@ a {
   background-color: $hovercolor;
 }
 
-.header .logo {
+.logo {
   display: block;
   float: left;
   font-size: 2em;
@@ -222,7 +221,7 @@ a:hover {
   }
 }
 
-/* Contact scss */
+/* Contact */
 
 #try {
   height: 100vh;
@@ -302,7 +301,7 @@ a:hover {
   }
 }
 
-/* About Me scss */
+/* About Me */
 
 .container {
   margin: 0;
@@ -319,11 +318,10 @@ a:hover {
 .left-side {
   position: relative;
   width: 300px;
-}
-
-.left-side img {
-  width: 100%;
-  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .right-side {
@@ -331,17 +329,16 @@ a:hover {
   width: 300px;
   margin-top: 75px;
   margin-left: 35px;
+  .about {
+    position: relative;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
 
-.right-side .about {
-  position: relative;
-  margin-top: 50px;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.right-side .name {
+.name {
   width: 400px;
   height: 50px;
   background: $maincolor;
@@ -349,14 +346,13 @@ a:hover {
   margin-top: 20px;
   margin-left: -100px;
   margin-bottom: 30px;
-}
-
-.right-side .about__one {
-  padding: 10px 10px;
-  font-size: 20px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.507);
-  text-transform: uppercase;
+  .about__one {
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.507);
+    text-transform: uppercase;
+  }
 }
 
 .right-side span {

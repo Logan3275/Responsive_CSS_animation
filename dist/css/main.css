@@ -26,7 +26,7 @@ a {
   background-color: #fff;
 }
 
-.header li a {
+li a {
   display: block;
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
@@ -38,7 +38,7 @@ a {
   background-color: #f4f4f4;
 }
 
-.header .logo {
+.logo {
   display: block;
   float: left;
   font-size: 2em;
@@ -220,7 +220,7 @@ a:hover {
   }
 }
 
-/* Contact scss */
+/* Contact */
 #try {
   height: 100vh;
   background: url("https://raw.githubusercontent.com/Logmastercoder/CODE/master/dist/Forest.jpg") no-repeat center;
@@ -321,7 +321,7 @@ a:hover {
   }
 }
 
-/* About Me scss */
+/* About Me */
 .container {
   margin: 0;
   padding: 0;
@@ -366,7 +366,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-.right-side .name {
+.name {
   width: 400px;
   height: 50px;
   background: #fff;
@@ -377,7 +377,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.right-side .about__one {
+.name .about__one {
   padding: 10px 10px;
   font-size: 20px;
   font-weight: 700;
