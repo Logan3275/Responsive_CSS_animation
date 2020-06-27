@@ -47,7 +47,7 @@ li a {
 }
 
 /* menu */
-.header .menu {
+.menu {
   clear: both;
   max-height: 0;
   -webkit-transition: max-height .2s ease-out;
@@ -55,7 +55,7 @@ li a {
 }
 
 /* menu icon */
-.header .menu-icon {
+.menu-icon {
   cursor: pointer;
   float: right;
   padding: 28px 20px;
@@ -66,7 +66,7 @@ li a {
           user-select: none;
 }
 
-.header .menu-icon .nav-icon {
+.nav-icon {
   background: #333;
   display: block;
   height: 2px;
@@ -76,8 +76,8 @@ li a {
   width: 18px;
 }
 
-.header .menu-icon .nav-icon:before,
-.header .menu-icon .nav-icon:after {
+.nav-icon:before,
+.nav-icon:after {
   background: #333;
   content: '';
   display: block;
@@ -88,11 +88,11 @@ li a {
   width: 100%;
 }
 
-.header .menu-icon .nav-icon:before {
+.nav-icon:before {
   top: 5px;
 }
 
-.header .menu-icon .nav-icon:after {
+.nav-icon:after {
   top: -5px;
 }
 
